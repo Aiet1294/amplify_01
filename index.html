@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 lana, Web irisgarriak diseinatzea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo-link">
+            <img src="img/logo.jpg" alt="Enpresaren logotipoa" class="logo">
+            <h1>03 lana, Web irisgarriak diseinatzea</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Hasiera</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JavaScript</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="irudiak">
+            <h2>Irudi Galeria</h2>
+            
+            <figure>
+                <img src="img/produktuak/10.jpg" alt="Produktu baten adibidea">
+                <figcaption>Irudia 1: Gure produktu nagusiaren erakusketa.</figcaption>
+            </figure>
+
+            <div class="gallery">
+                <img src="img/produktuak/2.jpg" alt="Galeria irudia 1">
+                <img src="img/produktuak/5.jpg" alt="Galeria irudia 2">
+                <img src="img/produktuak/8.jpg" alt="Galeria irudia 3">
+            </div>
+        </section>
+
+        <section id="taula">
+            <h2>Datuen Taula</h2>
+            <table>
+                <caption>Erabiltzaileen estatistikak urteka</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Urtea</th>
+                        <th scope="col">Bisitariak</th>
+                        <th scope="col">Hazkundea</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">2023</th>
+                        <td>15.000</td>
+                        <td>%10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2024</th>
+                        <td>22.000</td>
+                        <td>%45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia Edukia</h2>
+            <div class="media-container">
+                <div class="audio-box">
+                    <h3>Audioa entzun</h3>
+                    <audio controls>
+                        <source src="audio/gymusic.mp3" type="audio/mpeg">
+                        Zure nabigatzaileak ez du audio elementua onartzen.
+                    </audio>
+                </div>
+                
+                <div class="video-box">
+                    <h3>Bideoa ikusi</h3>
+                    <video controls width="320" height="240">
+                        <source src="video/biceps.mp4" type="video/mp4">
+                        <track src="video/azpitituluak.vtt" kind="subtitles" srclang="eu" label="Euskara">
+                        Zure nabigatzaileak ez du bideo elementua onartzen.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="estekak">
+            <h2>Kanpo Estekak (Sprites)</h2>
+            <ul class="sprite-links">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook-era joan">
+                        <span class="sprite sprite-facebook"></span>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer" title="Chrome deskargatu">
+                        <span class="sprite sprite-chrome"></span>
+                        <span class="sr-only">Google Chrome</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer" title="W3Schools-en ikasi">
+                        <span class="sprite sprite-w3schools"></span>
+                        <span class="sr-only">W3Schools</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Web Irisgarritasuna. Eskubide guztiak erreserbatuta.</p>
+    </footer>
+
+    </div>
+</body>
+</html>
