@@ -122,7 +122,8 @@
                 async function calcularPrecio() {
                     // Pon aquí la URL que has copiado de API Gateway + el recurso
                     // Ejemplo: https://xyz.amazonaws.com/prod/descuento
-                    const apiUrl = "AQUI_TU_URL_DE_API_GATEWAY/descuento?precio=150";
+                    // Asegúrate de que '/prod' es el nombre de la etapa que creaste (si pusiste 'dev', cambia 'prod' por 'dev')
+                    const apiUrl = "https://cmtlrj6yik.execute-api.us-east-1.amazonaws.com/dev/descuento?precio=150";
 
                     try {
                         const response = await fetch(apiUrl);
